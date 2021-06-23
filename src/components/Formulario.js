@@ -7,36 +7,41 @@ const Campo = styled.div`
     display: flex;
     margin-bottom: 1rem;
     align-items: center;
+    color:white;
     @media (max-width: 600px) {
     margin-bottom: 0.5rem;
     flex-wrap: wrap;
     font-size: 12px;
   }
   @media (max-width: 300px) {
-    font-size: 10px;
+    font-size: 12px;
   }
   
 `;
 const Label = styled.label`
     flex: 0 0 100px;  
+    color: white;
     @media (max-width: 600px) {
         flex: 0 0 30px;
         font-size: 12px;
   }
   @media (max-width: 300px) {
     flex: 0 0 10px;
-    font-size: 10px;
+
   }
 `;
 const Select = styled.select`
+    background-color: rgba(255,255,255,0.1);
+    color:yellow;
     display: block;
     width: 100%;
     padding: 1rem;
-    border: 1px solid e1e1e1;
+    border: 1px solid white;
     -webkit-appearance: none;
+    margin-bottom: 12px;
     @media (max-width: 600px) {
     height: 39px;
-    padding: 0rem;
+    padding: 0.6rem;
     font-size: 12px;
   }
 `;
@@ -47,20 +52,22 @@ const InputRadio = styled.input`
   }
 `;
 const Boton = styled.button`
-    background-color: green;
+    background-color: yellow;
     font-size: 16px;
     width: 100%;
     padding: 1rem;
-    color: #ffffff;
+    color: black;
     text-transform: uppercase;
     font-weight: bold;
     border: none;
     transition: background-color .3s ease;
     margin-top: 1rem;
     border-radius: 50px;
+    transition: 250ms;
     
     &:hover {
-        background-color: darkgreen;
+        background-color: rgb(255, 230, 0);
+        letter-spacing: 1px;
         cursor:pointer;
     }
     @media (max-width:600px){

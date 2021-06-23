@@ -9,22 +9,29 @@ import road from "./images/road.jpg"
 
 const Road = styled.div `
   height: 100vh;
+  width: 100%;
 `
 
 const Contenedor = styled.div`
   max-width: 600px;
-  margin: 9vh auto;
+  margin: 6vh auto;
   @media (max-width: 600px) {
     max-width: 300px;
+    margin: 3vh auto;
   }
   @media (max-width: 300px) {
-    max-width: 260px;
+    max-width: 290px;
   }
 `;
 const ContenedorFormulario = styled.div`
-  background-color: white;
+  background-color: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
   padding: 3rem;
-  border-radius: 20px;
+  border-radius: 6px;
+  @media (max-width: 500px) {
+    padding: 1.5rem;
+    max-height: 75vh;
+  }
 `;
 
 function App() {
