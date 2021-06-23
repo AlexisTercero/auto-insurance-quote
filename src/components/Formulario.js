@@ -78,7 +78,7 @@ const Boton = styled.button`
     }
 `;
 const Error = styled.div`
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.6);
     color: white;
     padding: 1rem;
     width: 100%;
@@ -156,7 +156,7 @@ const Formulario = ({guardarResumen, guardarCargando}) => {
         <form
             onSubmit={cotizarSeguro}
         >
-            { error ? <Error>Todos los campos son obligatorios</Error>:null }
+            { error ? <Error>All fields are required</Error>:null }
             <Campo>
                 {/* <Label>Marca: </Label> */}
                 <Select
