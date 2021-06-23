@@ -7,9 +7,26 @@ const Campo = styled.div`
     display: flex;
     margin-bottom: 1rem;
     align-items: center;
+    @media (max-width: 600px) {
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  @media (max-width: 300px) {
+    font-size: 10px;
+  }
+  
 `;
 const Label = styled.label`
-    flex: 0 0 100px;
+    flex: 0 0 100px;  
+    @media (max-width: 600px) {
+        flex: 0 0 30px;
+        font-size: 12px;
+  }
+  @media (max-width: 300px) {
+    flex: 0 0 10px;
+    font-size: 10px;
+  }
 `;
 const Select = styled.select`
     display: block;
@@ -17,12 +34,20 @@ const Select = styled.select`
     padding: 1rem;
     border: 1px solid e1e1e1;
     -webkit-appearance: none;
+    @media (max-width: 600px) {
+    height: 39px;
+    padding: 0rem;
+    font-size: 12px;
+  }
 `;
 const InputRadio = styled.input`
     margin:0 1rem;
+    @media (max-width: 600px) {
+    margin:0 0.6rem;
+  }
 `;
 const Boton = styled.button`
-    background-color: black;
+    background-color: green;
     font-size: 16px;
     width: 100%;
     padding: 1rem;
@@ -32,10 +57,17 @@ const Boton = styled.button`
     border: none;
     transition: background-color .3s ease;
     margin-top: 1rem;
+    border-radius: 50px;
     
     &:hover {
-        background-color: grey;
+        background-color: darkgreen;
         cursor:pointer;
+    }
+    @media (max-width:600px){
+        height: 30px;
+        font-size: 12px;
+        padding: 9px;
+        margin-top: 0.6rem;
     }
 `;
 const Error = styled.div`
@@ -119,26 +151,26 @@ const Formulario = ({guardarResumen, guardarCargando}) => {
         >
             { error ? <Error>Todos los campos son obligatorios</Error>:null }
             <Campo>
-                <Label>Marca: </Label>
+                {/* <Label>Marca: </Label> */}
                 <Select
                     name="marca"
                     value={marca}
                     onChange={obtenerInformacion}
                 >
-                    <option value="">--- Seleccione ---</option>
+                    <option value="">Select Brand</option>
                     <option value="americano">Americano</option>
                     <option value="europeo">Europeo</option>
                     <option value="asiatico">Asiatico</option>
                 </Select>
             </Campo>
             <Campo>
-                <Label>Año: </Label>
+                {/* <Label>Año: </Label> */}
                 <Select
                     name="year"
                     value={year} 
                     onChange={obtenerInformacion}               
                 >
-                    <option value="">--- Seleccione ---</option>
+                    <option value="">Select Year</option>
                     <option value="2021">2021</option>
                     <option value="2020">2020</option>
                     <option value="2019">2019</option>

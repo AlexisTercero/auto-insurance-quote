@@ -8,6 +8,10 @@ const Mensaje = styled.p`
     margin-top: 2rem;
     padding: 1rem;
     text-align: center;
+    @media (max-width: 600px){
+        font-size: 12px;
+        letter-spacing: -0.5px;
+        }
 `;
 
 const ResultadoCotizacion = styled.div`

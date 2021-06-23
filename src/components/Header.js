@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 
 const ContenedorHeader = styled.header`
     background-color: black;
-    padding: 10px;
+    width: 100vw;
+    padding: 20px;
     font-weight: bold;
     color:#FFFFFF;
+    margin-top:0
 `;
 const TextoHeader = styled.h1`
     font-size: 2rem;
