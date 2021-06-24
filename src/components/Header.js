@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
 const ContenedorHeader = styled.header`
-    background-image: linear-gradient(to bottom , black, black, transparent);
+    background-image: linear-gradient(to bottom , transparent, teal, transparent);
     width: 100vw;
     padding: 20px;
     font-weight: bold;

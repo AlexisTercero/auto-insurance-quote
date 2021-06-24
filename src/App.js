@@ -10,6 +10,9 @@ import road from "./images/road.jpg"
 const Road = styled.div `
   height: 100vh;
   width: 100%;
+  @media (max-width:500px){
+    
+  }
 `
 
 const Contenedor = styled.div`
@@ -20,7 +23,7 @@ const Contenedor = styled.div`
     margin: 3vh auto;
   }
   @media (max-width: 300px) {
-    max-width: 290px;
+    max-width: 300px;
   }
 `;
 const ContenedorFormulario = styled.div`
@@ -29,8 +32,9 @@ const ContenedorFormulario = styled.div`
   padding: 3rem;
   border-radius: 6px;
   @media (max-width: 500px) {
-    padding: 1.5rem;
-    max-height: 75vh;
+    padding: 1.6rem;
+    height: 75vh;
+    border-radius: 0;
   }
 `;
 
