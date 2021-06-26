@@ -59,14 +59,17 @@ const Boton = styled.button`
     color: black;
     text-transform: uppercase;
     font-weight: bold;
-    border: none;
+    border:3px solid yellow;
     transition: background-color .3s ease;
     margin-top: 1rem;
+
     border-radius: 50px;
     transition: 250ms;
     
     &:hover {
-        background-color: rgb(255, 230, 0);
+        background-color: transparent;
+        color:white;
+        border:3px solid yellow;
         letter-spacing: 1px;
         cursor:pointer;
     }

@@ -17,7 +17,7 @@ const Road = styled.div `
 
 const Contenedor = styled.div`
   max-width: 600px;
-  margin: 6vh auto;
+  margin: 3vh auto;
   @media (max-width: 600px) {
     max-width: 300px;
     margin: 3vh auto;

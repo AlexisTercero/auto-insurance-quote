@@ -4,10 +4,16 @@ import { primerMayuscula } from "../helper";
 import PropTypes from 'prop-types';
 
 const ContenedorResumen = styled.div`
-    padding: 1rem;
+    padding: 0.9rem;
     text-align: center;
-    background-color: #00838F;
-    color: #FFFFFF;
+    background-image: radial-gradient(
+      circle at 200% 200%,
+      #008475 6%,
+      rgba(255, 255, 255, 0) 10%
+    ),
+    radial-gradient(#39e8c2 14%, rgba(255, 255, 255, 0) 94%),
+    radial-gradient(circle at -93% -200%, #033e47 100%, rgba(184, 2, 2, 0) 10%);
+    color: black;
     margin-top: 1rem;
 `;
 
