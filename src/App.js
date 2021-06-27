@@ -1,23 +1,26 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Formulario from './components/Formulario';
 import Resumen from './components/Resumen';
 import Resultado from './components/Resultado';
 import Spinner from './components/Spinner';
 import styled from '@emotion/styled';
-import road from "./images/road.jpg"
+import road from './images/road.jpg';
+import Footer from './components/Footer';
 
-const Road = styled.div `
-  height: 100vh;
-  width: 100%;
-  @media (max-width:500px){
-    
+const Road = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  @media (max-width: 500px) {
   }
-`
+`;
 
 const Contenedor = styled.div`
-  max-width: 600px;
+  max-width: 60vw;
   margin: 3vh auto;
+  flex: 1;
   @media (max-width: 600px) {
     max-width: 300px;
     margin: 3vh auto;
@@ -27,7 +30,7 @@ const Contenedor = styled.div`
   }
 `;
 const ContenedorFormulario = styled.div`
-  background-color: rgba(255,255,255,0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
   padding: 3rem;
   border-radius: 6px;
@@ -55,8 +58,7 @@ function App() {
   const { cotizacion, datos } = resumen;
 
   return (
-    <Fragment>
-      <Road style={{ backgroundImage: `url(${road})` }}>
+    <Road style={{ backgroundImage: `url(${road})` }}>
       <Header titulo="safeDrive " />
       <Contenedor>
         <ContenedorFormulario>
@@ -72,8 +74,8 @@ function App() {
           {!cargando ? <Resultado cotizacion={cotizacion} /> : null}
         </ContenedorFormulario>
       </Contenedor>
-      </Road>
-    </Fragment>
+      <Footer />
+    </Road>
   );
 }
 
