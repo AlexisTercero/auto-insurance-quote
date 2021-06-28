@@ -6,6 +6,7 @@ import Resultado from './components/Resultado';
 import Spinner from './components/Spinner';
 import styled from '@emotion/styled';
 import road from './images/road.jpg';
+import roadvideo from './images/roadvideo.mp4';
 import Footer from './components/Footer';
 
 const Road = styled.div`
@@ -15,6 +16,15 @@ const Road = styled.div`
   margin: 0 auto;
   @media (max-width: 500px) {
   }
+`;
+
+const Video = styled.video`
+  opacity: 0.75;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 `;
 
 const Contenedor = styled.div`
@@ -58,7 +68,10 @@ function App() {
   const { cotizacion, datos } = resumen;
 
   return (
-    <Road style={{ backgroundImage: `url(${road})` }}>
+    <Road /* style={{ backgroundImage: `url(${road})` }} */>
+      <Video className="videoTag" autoPlay loop muted>
+        <source src={roadvideo} type="video/mp4" />
+      </Video>
       <Header titulo="safeDrive " />
       <Contenedor>
         <ContenedorFormulario>

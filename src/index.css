@@ -5,42 +5,40 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  background: #b1e5e3;  /* fallback for old browsers */
-  background: linear-gradient(to right, #11afaf, #d2fffe); 
-  font-family:Helvetica, sans-serif;
+  background: teal; /* fallback for old browsers */
+  background: linear-gradient(to right, teal, #84f1ef);
+  font-family: Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 h2 {
-  margin:0px;
+  margin: 0px;
   margin-bottom: 9px;
 }
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
 span.resultado {
   position: relative;
   width: 100%;
 }
 .resultado-enter {
-  transition: .5s;
+  transition: 0.5s;
 }
-.resultado-enter.resultado-enter-active{
+.resultado-enter.resultado-enter-active {
   transform: translateY(0%);
 }
-.resultado-exit{
+.resultado-exit {
   transform: translateY(0);
-  transition: .5s;
-  position : absolute;
+  transition: 0.5s;
+  position: absolute;
   left: 0;
-  bottom : 0;
+  bottom: 0;
   right: 0;
 }
-.resultado-exit-active{
+.resultado-exit-active {
   opacity: 0;
   transform: translateY(-10%);
 }
-
