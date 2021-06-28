@@ -6,7 +6,7 @@ body {
   height: 100vh;
   width: 100vw;
   background: teal; /* fallback for old browsers */
-  background: linear-gradient(to right, teal, #84f1ef);
+  background: linear-gradient(to right, rgb(0, 95, 95), #000505);
   font-family: Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
