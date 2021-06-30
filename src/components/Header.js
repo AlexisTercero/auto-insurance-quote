@@ -1,14 +1,16 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
+import imagen from '../images/safeDrive.svg';
 
 const ContenedorHeader = styled.header`
-  background-image: linear-gradient(to bottom, transparent, teal, transparent);
+  /* background-image: linear-gradient(to bottom, transparent, teal, transparent); */
   width: 100vw;
-  padding: 20px;
+  padding-top: 15px;
   font-weight: bold;
   color: whitesmoke;
   margin-top: 0;
+  display: flex;
 `;
 const TextoHeader = styled.h1`
   font-size: 6rem;
@@ -24,11 +26,20 @@ const TextoHeader = styled.h1`
     letter-spacing: -3px;
   }
 `;
+const Imagen = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 24vw;
+  min-width: 230px;
+  margin-top: 0rem;
+`;
 
 const Header = ({ titulo }) => {
   return (
     <ContenedorHeader>
-      <TextoHeader>{titulo}</TextoHeader>
+      <Imagen src={imagen} alt="safeDrive logo" />
+      {/* <TextoHeader>{titulo}</TextoHeader> */}
     </ContenedorHeader>
   );
 };

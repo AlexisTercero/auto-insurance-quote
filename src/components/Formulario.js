@@ -31,7 +31,7 @@ const Label = styled.label`
 `;
 const Select = styled.select`
   background-color: rgba(255, 255, 255, 0.1);
-  color: yellow;
+  color: #ffda00;
   display: block;
   width: 100%;
   padding: 1rem;
@@ -51,14 +51,14 @@ const InputRadio = styled.input`
   }
 `;
 const Boton = styled.button`
-  background-color: yellow;
+  background-color: #ffda00;
   font-size: 16px;
   width: 100%;
   padding: 1rem;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
-  border: 3px solid yellow;
+  border: 3px solid #ffda00;
   transition: background-color 0.3s ease;
   margin-top: 1rem;
 
@@ -68,14 +68,14 @@ const Boton = styled.button`
   &:hover {
     background-color: transparent;
     color: white;
-    border: 3px solid yellow;
+    border: 3px solid #ffda00;
     letter-spacing: 1px;
     cursor: pointer;
   }
   @media (max-width: 600px) {
     height: 30px;
     font-size: 12px;
-    padding: 9px;
+    padding: 6px;
     margin-top: 0.6rem;
   }
 `;
@@ -157,15 +157,15 @@ const Formulario = ({ guardarResumen, guardarCargando }) => {
         {/* <Label>Marca: </Label> */}
         <Select name="marca" value={marca} onChange={obtenerInformacion}>
           <option value="">Select Brand</option>
-          <option value="americano">Americano</option>
-          <option value="europeo">Europeo</option>
-          <option value="asiatico">Asiatico</option>
+          <option value="americano">American</option>
+          <option value="europeo">European</option>
+          <option value="asiatico">Asian</option>
         </Select>
       </Campo>
       <Campo>
         {/* <Label>Año: </Label> */}
         <Select name="year" value={year} onChange={obtenerInformacion}>
-          <option value="">Select Year</option>
+          <option value="">Select Model Year</option>
           <option value="2021">2021</option>
           <option value="2020">2020</option>
           <option value="2019">2019</option>
@@ -187,7 +187,7 @@ const Formulario = ({ guardarResumen, guardarCargando }) => {
           checked={plan === 'básico'}
           onChange={obtenerInformacion}
         />{' '}
-        Básico
+        Basic
         <InputRadio
           type="radio"
           name="plan"
@@ -195,10 +195,10 @@ const Formulario = ({ guardarResumen, guardarCargando }) => {
           checked={plan === 'completo'}
           onChange={obtenerInformacion}
         />{' '}
-        Completo
+        Full
       </Campo>
 
-      <Boton type="submit">Cotizar</Boton>
+      <Boton type="submit">quote</Boton>
     </form>
   );
 };

@@ -33,21 +33,20 @@ const Contenedor = styled.div`
   flex: 1;
   @media (max-width: 600px) {
     max-width: 300px;
-    margin: 3vh auto;
-  }
-  @media (max-width: 300px) {
-    max-width: 300px;
+    margin: 1vh auto;
   }
 `;
 const ContenedorFormulario = styled.div`
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(21px);
   padding: 3rem;
-  border-radius: 6px;
+  border-radius: 9px;
+  min-width: 25vw;
+  min-height: 50vh;
+  margin: 10px;
   @media (max-width: 500px) {
     padding: 1.6rem;
-    height: 75vh;
-    border-radius: 0;
+    border-radius: 6px;
   }
 `;
 
