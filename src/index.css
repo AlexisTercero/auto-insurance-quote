@@ -35,7 +35,7 @@ span.resultado {
 }
 .resultado-exit {
   transform: translateY(0);
-  transition: 0.5s;
+  transition: 0.6s;
   position: absolute;
   left: 0;
   bottom: 0;
