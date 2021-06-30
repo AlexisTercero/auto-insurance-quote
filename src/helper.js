@@ -7,13 +7,13 @@ export function calculaMarca(marca) {
   let incremento;
 
   switch (marca) {
-    case 'europeo':
+    case 'european':
       incremento = 1.3;
       break;
-    case 'americano':
+    case 'american':
       incremento = 1.15;
       break;
-    case 'asiatico':
+    case 'asian':
       incremento = 1.05;
       break;
     default:

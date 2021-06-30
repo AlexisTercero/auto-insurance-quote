@@ -14,11 +14,14 @@ body {
 h2 {
   margin: 0px;
   margin-bottom: 9px;
+  font-size: 18px;
 }
-ul {
+ul,
+li {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 15px;
 }
 span.resultado {
   position: relative;

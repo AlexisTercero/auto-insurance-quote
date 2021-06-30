@@ -157,9 +157,9 @@ const Formulario = ({ guardarResumen, guardarCargando }) => {
         {/* <Label>Marca: </Label> */}
         <Select name="marca" value={marca} onChange={obtenerInformacion}>
           <option value="">Select Brand</option>
-          <option value="americano">American</option>
-          <option value="europeo">European</option>
-          <option value="asiatico">Asian</option>
+          <option value="american">American</option>
+          <option value="european">European</option>
+          <option value="asian">Asian</option>
         </Select>
       </Campo>
       <Campo>
@@ -183,16 +183,16 @@ const Formulario = ({ guardarResumen, guardarCargando }) => {
         <InputRadio
           type="radio"
           name="plan"
-          value="básico"
-          checked={plan === 'básico'}
+          value="basic"
+          checked={plan === 'basic'}
           onChange={obtenerInformacion}
         />{' '}
         Basic
         <InputRadio
           type="radio"
           name="plan"
-          value="completo"
-          checked={plan === 'completo'}
+          value="Full"
+          checked={plan === 'Full'}
           onChange={obtenerInformacion}
         />{' '}
         Full

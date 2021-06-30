@@ -4,12 +4,12 @@ import { primerMayuscula } from '../helper';
 import PropTypes from 'prop-types';
 
 const ContenedorResumen = styled.div`
-  padding: 0.9rem;
+  padding: 0.3rem;
   text-align: center;
   background-color: transparent;
-  border: 2px solid teal;
+  border: none;
   color: whitesmoke;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 `;
 
 const Resumen = ({ datos }) => {
@@ -19,11 +19,13 @@ const Resumen = ({ datos }) => {
 
   return (
     <ContenedorResumen>
-      <h2>Resumen de Cotización</h2>
+      <h2>Quote Summary</h2>
       <ul>
-        <li>Brand: {primerMayuscula(marca)} </li>
-        <li>Plan: {primerMayuscula(plan)} </li>
-        <li>Year: {year} </li>
+        <li>
+          {' '}
+          {primerMayuscula(marca)} {year}{' '}
+        </li>
+        <li> {primerMayuscula(plan)} plan </li>
       </ul>
     </ContenedorResumen>
   );

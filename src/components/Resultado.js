@@ -5,37 +5,43 @@ import PropTypes from 'prop-types';
 
 const Mensaje = styled.p`
   background-color: transparent;
-  margin-top: 2rem;
-  padding: 1rem;
+  margin-top: 0rem;
+  padding: 0rem;
   color: white;
   text-align: center;
-  border: 1px solid teal;
+  border: none;
   @media (max-width: 600px) {
     font-size: 12px;
-    letter-spacing: -0.5px;
   }
 `;
 
 const ResultadoCotizacion = styled.div`
   text-align: center;
   padding: 0.5rem;
-  border: 3px solid teal;
-  background-color: rgb(127, 224, 237);
-  margin-top: 1rem;
+  border: 2px solid teal;
+  background-color: teal;
+  margin-top: 0.5rem;
   position: relative;
+  border-radius: 5px;
 `;
 
 const TextoCotizacion = styled.p`
   color: #00838f;
   padding: 1rem;
   text-transform: uppercase;
+  color: white;
   font-weight: bold;
   margin: 0;
+
+  @media (max-width: 600px) {
+    padding: 0;
+    font-size: 14px;
+  }
 `;
 
 const Resultado = ({ cotizacion }) => {
   return cotizacion === 0 ? (
-    <Mensaje>Chose brand, model year and a plan</Mensaje>
+    <Mensaje></Mensaje>
   ) : (
     <ResultadoCotizacion>
       <TransitionGroup component="span" className="resultado">

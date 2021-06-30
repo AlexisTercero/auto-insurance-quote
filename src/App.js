@@ -47,6 +47,7 @@ const ContenedorFormulario = styled.div`
   @media (max-width: 500px) {
     padding: 1.6rem;
     border-radius: 6px;
+    max-height: 70vh;
   }
 `;
 
@@ -54,7 +55,7 @@ function App() {
   const [resumen, guardarResumen] = useState({
     cotizacion: 0,
     datos: {
-      marca: '',
+      brand: '',
       year: '',
       plan: '',
     },
